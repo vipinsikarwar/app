@@ -1,0 +1,41 @@
+<div class="side-wrapper" *ngIf="isLoggedIn$ | async as isLoggedIn">
+    <div class="img-wrapper">
+        <div class="img"></div>
+            <div class="name">
+                name
+            </div>
+    </div>
+    <div class="menu-wrapper" routerLink="/dashboard">
+        <div class="fill " routerLinkActive="active"></div>
+        <div class="icon-wrp">
+            <div class="menu-name">
+                Dashboard
+            </div>
+        </div>
+    </div>
+    <div class="menu-wrapper"  routerLink="/syllabus">
+        <div class="fill" routerLinkActive="active"></div>
+        <div class="icon-wrp">
+            <div class="menu-name">
+                Syllabus
+            </div>
+        </div>
+    </div>
+    <div class="menu-wrapper"  routerLink="/account">
+        <div class="fill" routerLinkActive="active"></div>
+        <div class="icon-wrp">
+            <div class="menu-name">
+                Account
+            </div>
+        </div>
+    </div>
+    <div class="menu-wrapper"  routerLink="/login">
+        <div class="fill" routerLinkActive="active"></div>
+        <div class="icon-wrp">
+            <div class="menu-name" (click)="onLogout()" *ngIf="isLoggedIn">
+                logout
+            </div>
+        </div>
+    </div>
+  
+</div>

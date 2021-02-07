@@ -1,0 +1,74 @@
+<div class="page-wrap">
+   <div class="page-container">
+      <div class="content">
+         <div class="header">Syllabus</div>
+         <div class="upper-content">
+            <form [formGroup]="form" class="form-inner">
+              <div class="d1">
+                <div class="form-group">
+                  <div class="level">Board</div>
+                  <kendo-dropdownlist class="drpdwn" [data]="boardList">
+                  </kendo-dropdownlist>
+                </div>
+                <div class="form-group">
+                  <div class="level">Class</div>
+                  <kendo-dropdownlist class="drpdwn" [data]="classList">
+                  </kendo-dropdownlist>
+                </div>
+                <div class="form-group">
+                  <div class="level">Subject</div>
+                  <kendo-dropdownlist class="drpdwn" [data]="subjectList">
+                  </kendo-dropdownlist>
+                </div>
+               </div>
+               <div class="d2">
+                 <div class="form-group">
+                  <textarea class="txtarea" placeholder="syllabus description"></textarea>
+                 </div>
+                 <div class="form-group">
+                  <div class="level">Academic Year</div>
+                  <kendo-dropdownlist class="drpdwn" [data]="academicYear">
+                  </kendo-dropdownlist>
+                 </div>
+               </div>
+             </form>
+             <div class="inner-lower">
+                 <div class="inner-left">
+                    <div class="box box1">Number</div>
+                    <div class="box">Addition</div>
+                    <div class="box">Subtraction</div>
+                 </div>
+                 <div class="inner-right">
+                    <form >
+                       <div class="upper">
+                         <div class="lvl">Topic</div>
+                         <div class="form-group txtfield">
+                          <input class="txt1" type="text" placeholder="description" required>
+                          <input class="txt1" type="text" placeholder="alloted time" required>
+                         </div>
+                        </div>
+                      <div class="lower">
+                        <div class="lvl">Sub-topic</div>
+                        <div class="form-group txtfield">
+                          <input class="txt1" type="text" placeholder="counting" required>
+                          <input class="txt1" type="text" placeholder="description" required>
+                        </div>
+                        <div class="form-group txtfield">
+                          <input class="txt1" type="text" placeholder="multiple of 5" required>
+                          <input class="txt1" type="text" placeholder="description" required>
+                        </div>
+                        <div class="form-group txtfield">
+                          <input class="txt1" type="text" placeholder="multiple of 10" required>
+                          <input class="txt1" type="text" placeholder="description" required>
+                        </div>
+                     </div>
+                    </form>
+                 </div>
+             </div>
+         </div>
+         <div class="save">
+           <button class="btn">Save</button>
+         </div>
+       </div>
+   </div>
+</div>

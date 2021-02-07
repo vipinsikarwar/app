@@ -1,0 +1,35 @@
+<div class="page-wrap">
+  <div class="page-container">
+    <div class="content">
+      <div class="login">Login</div>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <input class="txt" type="text" placeholder="User" formControlName="userName" required>
+          <div class="error"
+          *ngIf="
+            keys['userName'].touched &&
+            keys['userName'].errors &&
+            keys['userName'].errors.required
+          ">
+            Username is required
+          </div>
+        </div>
+        <div class="form-group">
+          <input class="txt" type="password" placeholder="Password" formControlName="password" required>
+          <div class="error"
+          *ngIf="
+            keys['password'].touched &&
+            keys['password'].errors &&
+            keys['password'].errors.required
+          ">
+            Password is required
+          </div>
+        </div>
+        <div class="btn">
+          <button class="login-btn">login</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>

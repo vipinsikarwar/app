@@ -1,0 +1,21 @@
+<div class="page-wrap">
+    <div class="page-container">
+        <kendo-grid [data]="data" [pageable]="true" [sortable]="true" [pageSize]="10" [filterable]="true"
+            (dataStateChange)="onStateChange($event)">
+            <ng-template kendoGridToolbarTemplate>
+                <button kendoGridAddCommand>Add</button>
+                <button kendoGridRemoveCommand>Delete</button>
+            </ng-template>
+            <kendo-grid-column field="schoolName" title="School Name"></kendo-grid-column>
+            <kendo-grid-column field="board" title="Board"></kendo-grid-column>
+            <kendo-grid-column field="medium" title="Medium"></kendo-grid-column>
+            <kendo-grid-column field="class" title="Class"></kendo-grid-column>
+            <kendo-grid-column field="" title="Action">
+                <ng-template kendoGridCellTemplate let-isNew="isNew">
+                    <div>Edit</div>
+                </ng-template>
+            </kendo-grid-column>
+        </kendo-grid>
+    </div>
+
+</div>

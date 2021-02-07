@@ -31,6 +31,9 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
+              },
               "src/styles.scss"
             ],
             "scripts": []
@@ -94,6 +97,9 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
+              },
               "src/styles.scss"
             ],
             "scripts": []
@@ -127,5 +133,8 @@
       }
     }
   },
-  "defaultProject": "schoolApp"
+  "defaultProject": "schoolApp",
+  "cli": {
+    "analytics": "1d07c346-a44c-4d06-bb12-341662218610"
+  }
 }

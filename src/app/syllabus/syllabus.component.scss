@@ -1,0 +1,104 @@
+.content {
+    width: 100%;
+    margin: 60px 16px 16px 0px;
+    border-top: 2px solid black;
+    .header {
+        margin: 20px 0px 20px 30px;
+        font-size: large;
+        font-weight: 600;
+    }
+    .upper-content {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        height: fit-content;
+        .form-inner{
+          display: grid;
+          .d1 {
+              display: flex;
+              margin-bottom: 20px;
+              margin-top: 20px;
+          }
+          .d2 {
+              display: flex;
+              .txtarea {
+                  width: 200px;
+                  height: 30px;
+                  margin-left: 72px;
+                  margin-right: 20px;
+              }
+          }
+          .form-group {
+            display: flex;
+            .level {
+                margin: 5px 15px 5px 15px;
+            }
+            .drpdwn {
+                border: 1px solid gray;
+                margin: 5px 0px 5px 0px;
+            }
+          }
+        }
+        .inner-lower {
+            margin-top: 30px;
+            display: flex;
+            margin-bottom: 30px;
+            .inner-left {
+                display:grid;
+                border: 1px solid lightslategray;
+                margin-left: 70px;
+                .box {
+                    width: 120px;
+                    height: 25px;
+                    border: 1px solid black;
+                    text-align: center;
+                }
+                .box1 {
+                    background-color: lightsteelblue;
+                }
+            }
+            .inner-right {
+               display: grid;
+               border: 1px solid lightslategray;
+               .txtfield {
+                   display: flex;
+                   padding: 16px;
+                   .txt1 {
+                       margin-right: 40px;
+                       padding: 5px;
+                   }
+               }
+               .upper {
+                   display: grid;
+                   background-color: lightsteelblue;
+                   .lvl {
+                       font-size: medium;
+                       font-weight: 400;
+                       margin: 10px 0px 0px 10px;
+                   }
+               }
+               .lower {
+                   display: grid;
+                   background-color: lightsteelblue;
+                   .lvl {
+                    font-size: medium;
+                    font-weight: 400;
+                    margin: 10px 0px 0px 10px;
+                }
+               }
+            }
+        }
+    }
+    .save {
+        .btn {
+            float: right;
+            width: 100px;
+            height: 30px;
+            margin-top: 20px;
+            margin-right: 70px;
+            background-color: limegreen;
+            color: white;
+            border-radius: 5px;
+            border: 1px solid limegreen;
+        }
+    }
+}
